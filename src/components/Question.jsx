@@ -1,4 +1,4 @@
-import AnswerSet from './Answers';
+import AnswerSet from './AnswerSet';
 
 export default function Question({ isSubmitted, questionData, questionNumber, setQuizData }) {
   function selectedAnswerStyles(answer) {

@@ -5,7 +5,6 @@ export default function AnswerSet({
   handleAnswerSelect,
   questionData,
   selectedAnswerStyles,
-  isSubmitted,
 }) {
   return (
     <div>
@@ -16,7 +15,6 @@ export default function AnswerSet({
         {he.decode(answer)}
       </label>
       <input
-        disabled={isSubmitted}
         className='radio-field'
         id={questionData.question + answer}
         type='radio'
