@@ -8,8 +8,6 @@ export default function QuizPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
 
-  console.log({ quizData, isSubmitted, score });
-
   async function loadQuesitons() {
     try {
       const resp = await fetch('https://opentdb.com/api.php?amount=5&category=11');
