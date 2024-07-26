@@ -46,11 +46,9 @@ export default function Question({ isSubmitted, questionData, questionNumber, se
           return (
             <AnswerSet
               isSubmitted={isSubmitted}
-              isCorrect={questionData.isCorrect}
               answer={answer}
               handleAnswerSelect={handleAnswerSelect}
               selectedAnswerStyles={selectedAnswerStyles(answer)}
-              isSelected={isSelected}
               questionData={questionData}
               key={answer}
             />
