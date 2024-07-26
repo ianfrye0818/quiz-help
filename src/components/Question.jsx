@@ -1,7 +1,7 @@
 import AnswerSet from './Answers';
 
 export default function Question({ isSubmitted, questionData, questionNumber, setQuizData }) {
-  const selectedAnswerStyles = (answer) => {
+  function selectedAnswerStyles(answer) {
     const classes = ['radio-label'];
 
     if (questionData.selectedAnswer === answer) {
@@ -17,7 +17,7 @@ export default function Question({ isSubmitted, questionData, questionNumber, se
     }
 
     return classes.join(' ');
-  };
+  }
 
   function handleAnswerSelect(answer) {
     setQuizData((prev) =>
